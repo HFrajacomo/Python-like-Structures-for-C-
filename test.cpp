@@ -1,16 +1,16 @@
 #include <iostream>
-#include "data.h"
+#include "pylist.h"
+#include "pystring.h"
 
 int main(){
 	using namespace std;
 
-	PyList<int> a;
+	PyList<char> a;
 
-	for(int i=0; i<100; i++){
-		a.append(i);
-	}
+	PyString c = PyString("Hello World");
+	
 
-	for(int n: a){
-		cout << n << endl;
+	for(char e:c){
+		cout << e << endl;
 	}
 }
