@@ -68,6 +68,9 @@ public:
 
 	// Gets value of ith position
 	char operator[](int i){
+		if(i<0){
+			i += this->len;
+		}
 		return this->data[i];
 	}	
 

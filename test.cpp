@@ -7,10 +7,10 @@ int main(){
 
 	PyList<char> a;
 
-	PyString c = PyString("Hello World");
+	PyString c = PyString("Hello");
+	PyString d = PyString(" World");
+	c += d;
 	
-
-	for(char e:c){
-		cout << e << endl;
-	}
+	cout << c[-1] << endl;
+	//c+d.print();
 }
